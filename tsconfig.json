@@ -1,0 +1,48 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@modules/*": [
+        "app/views/pages/auth/*",
+        "app/views/pages/base/*",
+        "app/views/pages/general/*",
+        "app/views/pages/general/services/*",
+        "app/views/pages/general/interfaces/*",
+        "app/views/pages/maps/*",
+        "app/views/pages/error-page/*",
+        "app/views/layout/*",
+        "app/Core/shared/*",
+        "app/Core/primeNG/*",
+        "app/Core/interceptor/*",
+        "app/Core/guard/*",
+        "app/Core/pipe/*",
+      ],
+      "@env/*": ["environments/*"],
+      "exceljs": ["node_modules/exceljs/dist/exceljs.min"]
+    },
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": false,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+    "lib": ["es2020", "dom"]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
